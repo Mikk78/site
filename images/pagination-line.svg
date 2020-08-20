@@ -1,0 +1,17 @@
+<svg id="_1" data-name="1" xmlns="http://www.w3.org/2000/svg" width="10" height="1" viewBox="0 0 10 1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #444259;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #4a9baa;
+      }
+    </style>
+  </defs>
+  <path id="Line" class="cls-1" d="M326,151v-1h10v1H326Z" transform="translate(-326 -150)"/>
+  <rect id="Dot_2" data-name="Dot 2" class="cls-2" x="9" width="1" height="1"/>
+  <rect id="Dot_1" data-name="Dot 1" class="cls-2" width="1" height="1"/>
+</svg>

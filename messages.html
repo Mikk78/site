@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url(images/Background.jpg);">
+        <div class="content">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__inner-logo"><img src="images/header/logo.png" alt="logo"></div>
+                        <div class="header__inner-panel">
+                            <div class="header__inner-status">
+                                online
+                            </div>
+                            <div class="header__inner-message">
+                                <img src="images/header/message.png" alt="message">
+                                <span>3</span>
+                            </div>
+                            <div class="header__inner-lang">
+                                <button><img src="images/header/flag.png" alt="usa"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="messages">
+                <div class="container">
+                    <div class="messages__inner">
+                        <aside class="asside">
+                            <div class="asside-close">
+                                <img src="images/Hide.png" alt="hide">
+                            </div>
+                            <div class="asside__user-box">
+                                <div class="asside__user-avatar" style="background-image: url(images/menu/avatar.jpg);">
+                                </div>
+                                <div class="asside__user-nick">
+                                    user name
+                                </div>
+                                <div class="asside__user-location">
+                                    <img src="images/menu/location.png" alt="location">
+                                    <a href="#">location</a>
+                                </div>
+                                <ul class="asside__user-stats">
+                                    <li>
+                                        <div class="asside__user-num">
+                                            1250,00
+                                        </div>
+                                        <span>abc</span>
+                                    </li>
+                                    <li>
+                                        <div class="asside__user-num">
+                                            1432,57
+                                        </div>
+                                        <span>USDT</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="asside__menu">
+                                <div class="asside__menu-title">
+                                    main
+                                </div>
+                                <ul>
+                                    <li><a href="#"><img src="images/menu/Dashboard_Icon.png"
+                                                alt="Dashboard">Dashboard</a></li>
+                                    <li><a href="#"><img src="images/menu/News_Icon.png" alt="News">News</a></li>
+                                    <li><a href="#"><img src="images/menu/Investments_Icon.png"
+                                                alt="Investments">Investments</a></li>
+                                    <li><a href="#"><img src="images/menu/Transactions_Icon.png"
+                                                alt="Transactions">Transactions</a></li>
+                                    <li><a href="#"><img src="images/menu/Deposit_Icon.png" alt="">Deposit</a></li>
+                                    <li><a href="#"><img src="images/menu/Withdraw_Icon.png" alt="">Withdraw</a></li>
+                                    <li><a href="#"><img src="images/menu/Escrow_Icon.png" alt="">Escrow</a></li>
+                                    <li class="list">
+                                        <button>
+                                            <img class="list__image-close" src="images/menu/DeXchange_Icon-Closed.png"
+                                                alt="DeXchange">
+                                            <img class="list__image-oppen" src="images/menu/DeXchange_Icon-Open.png"
+                                                alt="DeXchange">
+                                            DeXchange
+                                            <div class="list__arrow--close">
+                                                <img src="images/menu/Closed_Right_Arrow.png" alt="close">
+                                            </div>
+                                            <div class="list__arrow--oppen">
+                                                <img src="images/menu/arrow-oppen.png" alt="oppen">
+                                            </div>
+                                        </button>
+                                        <ul style="display: none;">
+                                            <li><a href="#">Overview</a></li>
+                                            <li><a href="#">Trading</a></li>
+                                            <li><a href="#">Market Cap</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="active"><a href="#"><img src="images/menu/Messages_Icon.png"
+                                                alt="">Messages</a> <span>3</span></li>
+                                    <li><a href="#"><img src="images/menu/Profile_Icon.png" alt="">Profile</a></li>
+                                    <li><a href="#"><img src="images/menu/Logout_Icon.png" alt="">Logout</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <div class="body body__message">
+                            <div class="top">
+                                <div class="top__title">
+                                    Messages
+                                </div>
+                                <ul class="top__pagination">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><span>Messages</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs">
+                                <ul class="tabs-nav">
+                                    <li>
+                                        <div class="tabs-nav__active">
+                                            <img src="images/menu/inbox_icon.png" alt="inbox">
+                                        </div>
+                                        <a href="#tab-1">
+                                            inbox
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="tabs-nav__active">
+                                            <img src="images/menu/draft_icons.png" alt="draft">
+                                        </div>
+                                        <a href="#tab-2">draft</a>
+                                    </li>
+                                    <li>
+                                        <div class="tabs-nav__active">
+                                            <img src="images/menu/outbox_icon.png" alt="sent">
+                                        </div>
+                                        <a href="#tab-3">sent</a>
+                                    </li>
+                                    <li>
+                                        <div class="tabs-nav__active">
+                                            <img src="images/menu/trash_icon.png" alt="inbox">
+                                        </div>
+                                        <a href="#tab-4">trash</a>
+                                    </li>
+                                </ul>
+                                <div class="tabs-stage">
+                                    <div id="tab-1" style="display: block;">
+
+                                        <div class="tabs__top">
+                                            <form>
+                                                <input type="text" placeholder="Search...">
+                                                <button type="submit"><img src="images/message/search.png"
+                                                        alt="search"></button>
+                                            </form>
+                                            <div class="tabs__top-show">
+                                                <span>Showing 1-50 of 3,456</span>
+                                                <div class="tabs__top-arrows">
+                                                    <button><img src="images/message/left.png" alt="left"></button>
+                                                    <button><img src="images/message/right.png" alt="right"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabs--mes">
+                                            <ul class="tabs-nav--mes">
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-1">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="tabs-read">
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="tabs-read">
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="tabs-read">
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="tabs-read">
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mes-2">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="tabs-read">
+                                                    <a href="#mes-11">
+                                                        <div class="tabs--mes__image">
+                                                            <img src="images/message/avatar.jpg" alt="avatar"
+                                                                style="width:50px; height:50px;">
+                                                        </div>
+                                                        <div class="tabs--mes__info">
+                                                            <div class="tabs--mes__name">
+                                                                Sterey aSonez
+                                                            </div>
+                                                            <div class="tabs--mes__message">
+                                                                Accusamus at vero eos et iusto...
+                                                            </div>
+                                                            <div class="tabs--mes__time">
+                                                                <img class="tabs__time-def"
+                                                                    src="images/message/time-def.png" alt="time">
+                                                                <img class="tabs__time-active"
+                                                                    src="images/message/time-active.png" alt="time">
+                                                                <span>16:39</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tabs-stage--mes message__body">
+                                                <div id="mes-1">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-2">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-3">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-4">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-5">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-6">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-7">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-8">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-9">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-10">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="mes-11">
+                                                    <div class="message__body-inner">
+                                                        <div class="message__body-title">
+                                                            A View From The Other Side
+                                                        </div>
+                                                        <div class="message__body-panel">
+                                                            <div class="message__body-name">
+                                                                <img src="images/message/avatar.jpg" alt="avatar">
+                                                                sterey sonez
+                                                            </div>
+                                                            <div class="message__body-time">
+                                                                <img src="images/message/time-def.png" alt="time">
+                                                                <span>12:53</span>
+                                                            </div>
+                                                            <div class="message__body-date">
+                                                                25 jUL 2020
+                                                            </div>
+                                                            <ul class="message__body-links">
+                                                                <li><button><img src="images/message/Reply.png"
+                                                                            alt="Reply"></button></li>
+                                                                <li class="links--custom"><button><img
+                                                                            src="images/message/Forward.png"
+                                                                            alt="Forward"></button></li>
+                                                                <li><button><img src="images/message/Delete.png"
+                                                                            alt="Delete"></button></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="message__body-information message__information">
+                                                            <div class="message__information-title">
+                                                                Position requirements
+                                                            </div>
+                                                            <div class="message__information-nick">
+                                                                Dear Mr. Bradley
+                                                            </div>
+                                                            <p class="message__information-text">
+                                                                I am interested in the Coordinator position advertised
+                                                                on XYZ. My resume is enclosed for your review. Given my
+                                                                related experience and excellent capabilities I would
+                                                                appreciate your consideration for this job opening. My
+                                                                skills are an ideal match for this position.
+                                                            </p>
+                                                            <div class="message__information-suptitle">
+                                                                Your Requirements:
+                                                            </div>
+                                                            <ul class="message__information-list">
+                                                                <li>Experience in the supervision of student staff and
+                                                                    strong interpersonal skills are also preferred.</li>
+                                                                <li>Valid Minnesota driver's license with good driving
+                                                                    record. Ability to travel to different sites
+                                                                    required.</li>
+                                                                <li>Experience in collegiate programming and management.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="message__information-text">
+                                                                My Qualifications hiring, training, scheduling and
+                                                                management of staff, managing supply inventory, and
+                                                                ordering.
+                                                            </p>
+                                                            <p class="message__information-bigtext">
+                                                                Extensive experience in collegiate programming and
+                                                                management. Excellent interpersonal and communication
+                                                                skills. I appreciate your taking the time to review my
+                                                                credentials and experience. Again, thank you for your
+                                                                consideration.
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sincerely,
+                                                            </p>
+                                                            <p class="message__information-text">
+                                                                Sterey
+                                                            </p>
+                                                            <button class="replay">Click here to
+                                                                <span>Reply</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="copyRight copyRight__cust">
+                <div class="container">
+                    © 2020 ABC Coin Platform
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
