@@ -1775,6 +1775,9 @@ a.notfound__inner-home {
     font-size: 14px;
     color: #5d858d
 }
+.profile_box-personal{
+
+}
 
 .profile .profile_box-birth {
     display: -webkit-box;
@@ -1956,8 +1959,8 @@ a.notfound__inner-home {
 .switch {
     position: relative;
     display: inline-block;
-    width: 35px;
-    height: 15px;
+    width: 30px;
+    height: 13px;
     margine:10px;
 }
 
@@ -1980,8 +1983,8 @@ a.notfound__inner-home {
     margin-bottom:-2px ;
     position: absolute;
     content: "";
-    height: 12px;
-    width: 12px;
+    height: 7px;
+    width: 7px;
     left: 4px;
     bottom: 4px;
     background-color: white;
