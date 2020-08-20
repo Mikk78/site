@@ -1962,7 +1962,6 @@ a.notfound__inner-home {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    transform: translateX();
     z-index: 5;
     background-color: #56baca;
     border-radius: 50%;
@@ -1976,7 +1975,7 @@ a.notfound__inner-home {
     right: -29px
 }
 
-.profile .hider input[type="radio"]:checked + label.check-row__off::before{
+.profile .hider input[type="radio"]:checked + label.check-row__off::before {
     right: -18px
 }
 
