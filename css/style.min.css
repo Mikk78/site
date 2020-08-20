@@ -1801,6 +1801,7 @@ a.notfound__inner-home {
 }
 
 .profile .profile_box-birth p{
+    padding: 5px;
     font-size: 14px;
     text-transform: uppercase;
     color: #5d858d;
@@ -1842,25 +1843,6 @@ a.notfound__inner-home {
 .profile .profile_box-birth input + input {
     border-left: none
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .profile .profile_box-trade, .profile .box-row__trade {
     font-size: 12px;
@@ -1967,33 +1949,72 @@ a.notfound__inner-home {
     position: relative;
     margin-bottom: 0 !important
 }
-
-.profile .hider label.check-row__off::before {
-    height: 8px;
-    width: 8px !important;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 5;
-    background-color: #56baca;
-    border-radius: 50%;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    display: block;
-    right: -29px
+.hider p{
+    padding: 5px;
 }
 
-.profile .hider input[type="radio"]:checked + label.check-row__off::before {
-    right: -18px
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+    margine:10px;
+}
+
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    margin-bottom:-2px ;
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #56baca;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #56baca;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .profile .hider input[type="radio"]:checked + label {
-    color: #56baca
+    color: #56baca;
 }
 
 .profile .hider-line {
@@ -2003,8 +2024,9 @@ a.notfound__inner-home {
     background-color: #353e43;
     position: relative;
     border-radius: 10px;
-    cursor: pointer
+    cursor: pointer;
 }
+
 
 .profile .wallet-icon {
     max-width: 28px;
@@ -2027,7 +2049,7 @@ a.notfound__inner-home {
 }
 
 .profile .profile_box-wallet .profile_box-row:last-child input, .profile .profile_box-wallet .profile_box-row:last-child .wallet-icon {
-    opacity: 0.6
+    opacity: 0.6;
 }
 
 .box {
