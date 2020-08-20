@@ -1783,7 +1783,8 @@ a.notfound__inner-home {
     margin-bottom: 35px
 }
 
-.profile .profile_box-birth input{
+.profile .profile_box-birth select{
+    width: 700px;
     text-transform: uppercase;
     color: #56baca;
     font-size: 12px;
@@ -1795,10 +1796,22 @@ a.notfound__inner-home {
     -o-transition: all 0.4s;
     transition: all 0.4s;
     background-color: transparent;
-    max-width: 60px;
+    max-width: 80px;
     outline: none
 }
-.profile .profile_box-birth p{}
+
+.profile .profile_box-birth p{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5d858d;
+    max-width: 170px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+
+}
+
+
 
 
 .profile .profile_box-birth input:hover {
