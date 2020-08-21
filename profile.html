@@ -12,6 +12,7 @@
 </head>
 
 <body style="background-image: url(images/new-bg.jpg);">
+<p><a name="top"></a></p>
     <div class="wrapper">
         <div class="content">
 
@@ -236,7 +237,6 @@
                                                 <div class="profile_box-title box__title">
                                                     Account data
                                                 </div>
-
                                                 <div class="profile_box-account">
                                                     <div class="profile_box-row"><span>Username</span> <input
                                                             type="text">
@@ -267,7 +267,7 @@
                                                 <div class="profile_box-personal">
                                                     <div class="profile_box-birth">
                                                         <p>DATE OF BIRTH</p>
-                                                        <select class="days" name="profile_box-birth_day">
+                                                        <select style="background-color: black;" class="days" name="profile_box-birth_day">
                                                             <option disabled selected>day</option>
                                                             <option>1</option>
                                                             <option>2</option>
@@ -301,7 +301,7 @@
                                                             <option>30</option>
                                                             <option>31</option>
                                                         </select>
-                                                        <select class="month" name="profile_box-birth_month">
+                                                        <select style="background-color: black;" class="month" name="profile_box-birth_month">
                                                             <option disabled selected>Month</option>
                                                             <option>January</option>
                                                             <option>February</option>
@@ -317,7 +317,7 @@
                                                             <option> December</option>
 
                                                         </select>
-                                                        <select class="years" name="profile_box-birth_years">
+                                                        <select style="background-color: black;" class="years" name="profile_box-birth_years">
                                                             <option disabled selected>Years</option>
                                                             <option>2020</option>
                                                             <option>2019</option>
@@ -446,8 +446,6 @@
                                             </div>
                                             <div class="profile_box box">
                                                 <div class="profile_box-title box__title">
-
-
                                                     Wallet Data
                                                 </div>
                                                 <div class="profile_box-wallet">
@@ -509,80 +507,88 @@
                                             </div>
                                         </form>
                                     </div>
-
-                                    <div id="tab-3">
-                                        <form class="email__notif">
-                                            <div class="password__box box">
-                                                <div class="box__title password__box-title">
-                                                    Email Notifications
-                                                </div>
-                                                <div class="box-row">
-                                                    <span>Recieve notifications</span>
-                                                    <div class="hider">
-                                                        <p>Off</p>
-                                                            <label class="switch">
-                                                                <input type="checkbox">
-                                                                <span class="slider round"></span>
-                                                            </label>
-                                                        <p>On</p>
+                                        <div id="tab-3">
+                                            <form class="email__notif">
+                                                <div class="password__box box">
+                                                    <div class="box__title password__box-title">
+                                                        Email Notifications
+                                                    </div>
+                                                    <div class="box-row">
+                                                        <span>Recieve notifications</span>
+                                                        <form method="">
+                                                            <div class="hider">
+                                                                <p>Off</p>
+                                                                    <label class="switch">
+                                                                        <input type="checkbox">
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                <p>On</p>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="box-row box-row__trade box check-row">
-                                                <span>Deposit notifications</span>
-                                                <input type="radio" name="depNotifications" id="yesNotifications">
-                                                <label for="yesNotifications">
-                                                    yes
-                                                </label>
-                                                <input type="radio" name="depNotifications" id="nowNotifications">
-                                                <label for="nowNotifications">
-                                                    now
-                                                </label>
-                                            </div>
-                                            <div class="box-row box-row__trade box check-row">
-                                                <span>Withdrawal notifications</span>
-                                                <input type="radio" name="withdrawalNot" id="withdrawalNotYes">
-                                                <label for="withdrawalNotYes">
-                                                    yes
-                                                </label>
-                                                <input type="radio" name="withdrawalNot" id="withdrawalNotNow">
-                                                <label for="withdrawalNotNow">
-                                                    now
-                                                </label>
-                                            </div>
-                                            <div class="box-row box-row__trade box check-row">
-                                                <span>Purchase notifications</span>
-                                                <input type="radio" name="purchaseNot" id="purchaseNotYes">
-                                                <label for="purchaseNotYes">
-                                                    yes
-                                                </label>
-                                                <input type="radio" name="purchaseNot" id="purchaseNotNow">
-                                                <label for="purchaseNotNow">
-                                                    now
-                                                </label>
-                                            </div>
-                                            <div class="box-row box-row__trade box check-row">
-                                                <span>Password change notifications</span>
-                                                <input type="radio" name="passwordnot" id="passwordnotYes">
-                                                <label for="passwordnotYes">
-                                                    yes
-                                                </label>
-                                                <input type="radio" name="passwordnot" id="passwordnotNow">
-                                                <label for="passwordnotNow">
-                                                    now
-                                                </label>
-                                            </div>
-                                            <div class="box_panel">
-                                                <a href="#">
-                                                    Cancel
-                                                </a>
-                                                <button>
-                                                    Save changes
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-
+                                                <div class="box-row box-row__trade box check-row">
+                                                    <span>Deposit notifications</span>
+                                                    <form action="">
+                                                        <input type="radio" name="depNotifications" id="yesNotifications">
+                                                        <label for="yesNotifications">
+                                                            yes
+                                                        </label>
+                                                        <input type="radio" name="depNotifications" id="nowNotifications">
+                                                        <label for="nowNotifications">
+                                                            now
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="box-row box-row__trade box check-row">
+                                                    <span>Withdrawal notifications</span>
+                                                    <form action="">
+                                                        <input type="radio" name="withdrawalNot" id="withdrawalNotYes">
+                                                        <label for="withdrawalNotYes">
+                                                            yes
+                                                        </label>
+                                                        <input type="radio" name="withdrawalNot" id="withdrawalNotNow">
+                                                        <label for="withdrawalNotNow">
+                                                            now
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="box-row box-row__trade box check-row">
+                                                    <span>Purchase notifications</span>\
+                                                    <form action="">
+                                                        <input type="radio" name="purchaseNot" id="purchaseNotYes">
+                                                        <label for="purchaseNotYes">
+                                                            yes
+                                                        </label>
+                                                        <input type="radio" name="purchaseNot" id="purchaseNotNow">
+                                                        <label for="purchaseNotNow">
+                                                            now
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="box-row box-row__trade box check-row">
+                                                    <span>Password change notifications</span>
+                                                    <form method="" action="">
+                                                        <input type="radio" name="passwordnot" id="passwordnotYes">
+                                                        <label for="passwordnotYes">
+                                                            yes
+                                                        </label>
+                                                        <input type="radio" name="passwordnot" id="passwordnotNow">
+                                                        <label for="passwordnotNow">
+                                                            now
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="box_panel">
+                                                    <a href="#">
+                                                        Cancel
+                                                    </a>
+                                                    <button>
+                                                        Save changes
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     <div id="tab-4">
                                         <div class="twofactor">
                                             <div class="twofactor__box">
@@ -697,7 +703,7 @@
                                     <div class="copyRight copyRight__cust">
                                         © 2020 ABC Coin Platform
                                     </div>
-                                    <a href="#" class="footer-up">
+                                    <a href="#top" class="footer-up">
                                         <span>up</span>
                                         <div class="footer-up-box">
                                             <img src="images/profile/UP_Arrow.png" alt="up">

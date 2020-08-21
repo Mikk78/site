@@ -1734,7 +1734,8 @@ a.notfound__inner-home {
 }
 
 .profile .profile_box-row + .profile_box-row, .profile .profile_box-row + .box-row, .profile .box-row + .profile_box-row, .profile .box-row + .box-row {
-    margin-top: 30px
+    margin-top: 0px;
+    padding: 20px;
 }
 
 .profile .profile_box-row textarea, .profile .box-row textarea {
@@ -1901,6 +1902,7 @@ a.notfound__inner-home {
 }
 
 .profile .check-male {
+    padding: 10px;
     font-size: 14px;
     color: #5d858d
 }
@@ -2116,12 +2118,19 @@ input:checked + .slider:before {
 }
 
 .footer {
+    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
     margin-top: 70px;
     height: 40px
 }
 
 .footer .copyRight {
-    padding-bottom: 0
+    padding-top: 100px;
+    margin-left: 300px;
 }
 
 .footer__inner {
@@ -2133,7 +2142,8 @@ input:checked + .slider:before {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+
 }
 
 .footer-up {
@@ -2145,7 +2155,9 @@ input:checked + .slider:before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #5d858d
+    color: #5d858d;
+    padding-top: 30px;
+    margin-right: 27px;
 }
 
 .footer-up-box {
