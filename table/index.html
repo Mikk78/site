@@ -1,680 +1,931 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-	 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/libs.min.css">
-	 <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body style="background-image: url(images/new-bg.jpg);">
-    <div class="wrapper">
-        <div class="content">
-
-            <header class="header">
-                <div class="container">
-                    <div class="header__inner">
-                        <div class="header__inner-logo"><img src="images/header/logo.png" alt="logo"></div>
-                        <div class="header__inner-panel">
-                            <div class="header__inner-status">
-                                online
-                            </div>
-                            <div class="header__inner-message">
-                                <img src="images/header/message.png" alt="message">
-                                <span></span>
-                            </div>
-                            <div class="header__inner-lang">
-                                <button><img src="images/header/flag.png" alt="usa"></button>
-                            </div>
+<div class="wrapper">
+    <div class="content">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__inner-logo"><img src="images/header/logo.png" alt="logo"></div>
+                    <div class="header__inner-panel">
+                        <div class="header__inner-status">
+                            online
+                        </div>
+                        <div class="header__inner-message">
+                            <img src="images/header/message.png" alt="message">
+                            <span></span>
+                        </div>
+                        <div class="header__inner-lang">
+                            <button><img src="images/header/flag.png" alt="usa"></button>
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <section class="profile">
-                <div class="container">
-                    <div class="profile__inner">
-                        <aside class="asside">
-                            <div class="asside-close">
-                                <img src="images/Hide.png" alt="hide">
+        <section class="profile">
+            <div class="container">
+                <div class="profile__inner">
+                    <aside class="asside">
+                        <div class="asside-close">
+                            <img src="images/Hide.png" alt="hide">
+                        </div>
+                        <div class="asside__user-box">
+                            <div class="asside__user-avatar" style="background-image: url(images/menu/avatar.jpg);">
                             </div>
-                            <div class="asside__user-box">
-                                <div class="asside__user-avatar" style="background-image: url(images/menu/avatar.jpg);">
-                                </div>
-                                <div class="asside__user-nick">
-                                    user name
-                                </div>
-                                <div class="asside__user-location">
-                                    <img src="images/menu/location.png" alt="location">
-                                    <a href="#">location</a>
-                                </div>
-                                <ul class="asside__user-stats">
-                                    <li>
-                                        <div class="asside__user-num">
-                                            9999999
+                            <div class="asside__user-nick">
+                                user name
+                            </div>
+                            <div class="asside__user-location">
+                                <img src="images/menu/location.png" alt="location">
+                                <a href="#">location</a>
+                            </div>
+                            <ul class="asside__user-stats">
+                                <li>
+                                    <div class="asside__user-num">
+                                        9999999
+                                    </div>
+                                    <span>abc</span>
+                                </li>
+                                <li>
+                                    <div class="asside__user-num">
+                                        99999999
+                                    </div>
+                                    <span>USDT</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="asside__menu">
+                            <div class="asside__menu-title">
+                                main
+                            </div>
+                            <ul>
+                                <li class="active"><a href="#"><img src="images/menu/Dashboard_Icon.png"
+                                                                    alt="Dashboard">Dashboard</a></li>
+                                <li><a href="#"><img src="images/menu/News_Icon.png" alt="News">News</a></li>
+                                <li><a href="#"><img src="images/menu/Investments_Icon.png"
+                                                     alt="Investments">Investments</a></li>
+                                <li><a href="#"><img src="images/menu/Transactions_Icon.png"
+                                                     alt="Transactions">Transactions</a></li>
+                                <li><a href="#"><img src="images/menu/Deposit_Icon.png" alt="">Deposit</a></li>
+                                <li><a href="#"><img src="images/menu/Withdraw_Icon.png" alt="">Withdraw</a></li>
+                                <li><a href="#"><img src="images/menu/Escrow_Icon.png" alt="">Escrow</a></li>
+                                <li class="list list-active">
+                                    <button>
+                                        <img class="list__image-close" src="images/menu/DeXchange_Icon-Closed.png"
+                                             alt="DeXchange">
+                                        <img class="list__image-oppen" src="images/menu/DeXchange_Icon-Open.png"
+                                             alt="DeXchange">
+                                        DeXchange
+                                        <div class="list__arrow--close">
+                                            <img src="images/menu/Closed_Right_Arrow.png" alt="close">
                                         </div>
-                                        <span>abc</span>
-                                    </li>
-                                    <li>
-                                        <div class="asside__user-num">
-                                            99999999
+                                        <div class="list__arrow--oppen">
+                                            <img src="images/menu/arrow-oppen.png" alt="oppen">
                                         </div>
-                                        <span>USDT</span>
-                                    </li>
-                                </ul>
+                                    </button>
+                                    <ul style="display: block;">
+                                        <li><a href="#">Overview</a></li>
+                                        <li><a href="#">Trading</a></li>
+                                        <li><a href="#">Market Cap</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/menu/Messages_Icon-non.png"
+                                                     alt="">Messages</a> <span>3</span></li>
+                                <li><a href="#"><img src="images/menu/Profile_Icon.png" alt="">Profile</a></li>
+                                <li><a href="#"><img src="images/menu/Logout_Icon.png" alt="">Logout</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="body invest">
+                        <div class="top">
+                            <div class="top__title">
+                                Investments
                             </div>
-                            <div class="asside__menu">
-                                <div class="asside__menu-title">
-                                    main
-                                </div>
-                                <ul>
-                                    <li class="active"><a href="#"><img src="images/menu/Dashboard_Icon.png"
-                                                alt="Dashboard">Dashboard</a></li>
-                                    <li><a href="#"><img src="images/menu/News_Icon.png" alt="News">News</a></li>
-                                    <li><a href="#"><img src="images/menu/Investments_Icon.png"
-                                                alt="Investments">Investments</a></li>
-                                    <li><a href="#"><img src="images/menu/Transactions_Icon.png"
-                                                alt="Transactions">Transactions</a></li>
-                                    <li><a href="#"><img src="images/menu/Deposit_Icon.png" alt="">Deposit</a></li>
-                                    <li><a href="#"><img src="images/menu/Withdraw_Icon.png" alt="">Withdraw</a></li>
-                                    <li><a href="#"><img src="images/menu/Escrow_Icon.png" alt="">Escrow</a></li>
-                                    <li class="list list-active">
-                                        <button>
-                                            <img class="list__image-close" src="images/menu/DeXchange_Icon-Closed.png"
-                                                alt="DeXchange">
-                                            <img class="list__image-oppen" src="images/menu/DeXchange_Icon-Open.png"
-                                                alt="DeXchange">
-                                            DeXchange
-                                            <div class="list__arrow--close">
-                                                <img src="images/menu/Closed_Right_Arrow.png" alt="close">
+                            <ul class="top__pagination">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                                <li><span>Investments</span></li>
+                            </ul>
+                        </div>
+                        <div class="invest__wrap">
+                            <div class="invest__top">
+                                <div class="spollers__item">
+                                    <div class="spollers__title spoller closeall">
+                                        <span>Hide</span>
+                                        <img src="images/investmens/hide.png" alt=""/>
+                                    </div>
+                                    <div class="spollers__text">
+                                        <div class="invest__row">
+                                            <div class="invest__col">
+                                                <div class="invest__total-top top-total">
+                                                    <div class="top-total__name">
+                                                        <div class="top-total__name-bal">USDT Total Balance</div>
+                                                        <div class="top-total__name-num">27232.57 USDT</div>
+                                                    </div>
+                                                    <div class="top-total__wrap">
+                                                        <div class="top-total__deposit">
+                                                            <div class="top-total__deposit-name">USDT Deposited</div>
+                                                            <div class="top-total__deposit-num">14732.57 USDT</div>
+                                                        </div>
+                                                        <div class="top-total__dividens">
+                                                            <div class="top-total__dividens-name">USDT Dividends</div>
+                                                            <div class="top-total__dividens-num">12500.00 USDT</div>
+                                                        </div>
+                                                        <div class="top-total__unreal">
+                                                            <div class="top-total__unreal-name">Unrealised PnL (USDT)
+                                                            </div>
+                                                            <div class="top-total__unreal-num">+2357.22 USDT</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="invest__total-bottom bottom-total">
+                                                    <div class="bottom-total__name">
+                                                        <div class="bottom-total__name-bal">ABC Total Balance</div>
+                                                        <div class="bottom-total__name-num">8420 ABC</div>
+                                                    </div>
+                                                    <div class="bottom-total__wrap">
+                                                        <div class="bottom-total__trad">
+                                                            <div class="bottom-total__trad-name">ABC Balance in
+                                                                trading
+                                                            </div>
+                                                            <div class="bottom-total__trad-num">4250 ABC</div>
+                                                        </div>
+                                                        <div class="bottom-total__frozen">
+                                                            <div class="bottom-total__frozen-name">Frozen ABC Balance
+                                                            </div>
+                                                            <div class="bottom-total__frozen-num">1670 ABC</div>
+                                                        </div>
+                                                        <div class="bottom-total__ava">
+                                                            <div class="bottom-total__ava-name">Available ABC Balance
+                                                            </div>
+                                                            <div class="bottom-total__ava-num">830 ABC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="invest__links-btn">
+                                                    <a href="#callback" class="invest__link pl">Open new TID</a>
+                                                    <a href="#callback" class="invest__link pl">Make A Deposit</a>
+                                                    <a href="#callback" class="invest__link pl">Buy a Profit Card</a>
+                                                </div>
                                             </div>
-                                            <div class="list__arrow--oppen">
-                                                <img src="images/menu/arrow-oppen.png" alt="oppen">
-                                            </div>
-                                        </button>
-                                        <ul style="display: block;">
-                                            <li><a href="#">Overview</a></li>
-                                            <li><a href="#">Trading</a></li>
-                                            <li><a href="#">Market Cap</a></li>
-                                        </ul>
-                                    </li>
-                                    <li ><a href="#"><img src="images/menu/Messages_Icon-non.png"
-                                                alt="">Messages</a> <span>3</span></li>
-                                    <li ><a href="#"><img src="images/menu/Profile_Icon.png" alt="">Profile</a></li>
-                                    <li><a href="#"><img src="images/menu/Logout_Icon.png" alt="">Logout</a></li>
-                                </ul>
-                            </div>
-								</aside>
-            
-                                <div class="body invest">
-									<div class="top">
-										<div class="top__title">
-											Investments
-										</div>
-										<ul class="top__pagination">
-											 <li><a href="#">Home</a></li>
-											 <li><a href="#">Dashboard</a></li>
-											 <li><span>Investments</span></li>
-										</ul>
-								  </div>
-								  <div class="invest__wrap">
-									  <div class="invest__top">
-										<div class="spollers__item">
-                                            <div class="spollers__title spoller closeall">
-                                                <span>Hide</span>
-                                                <img src="images/investmens/hide.png" alt="" />
-                                            </div>
-											<div class="spollers__text">
-												<div class="invest__row">
-													<div class="invest__col">
-														<div class="invest__total-top top-total">
-															<div class="top-total__name">
-																<div class="top-total__name-bal">USDT Total Balance</div>
-																<div class="top-total__name-num">27232.57 USDT</div>
-															</div>
-															<div class="top-total__wrap">
-																<div class="top-total__deposit">
-																	<div class="top-total__deposit-name">USDT Deposited</div>
-																	<div class="top-total__deposit-num">14732.57 USDT</div>
-																</div>
-																<div class="top-total__dividens">
-																	<div class="top-total__dividens-name">USDT Dividends</div>
-																	<div class="top-total__dividens-num">12500.00 USDT</div>
-																</div>
-																<div class="top-total__unreal">
-																	<div class="top-total__unreal-name">Unrealised PnL (USDT)</div>
-																	<div class="top-total__unreal-num">+2357.22 USDT</div>
-																</div>
-															</div>
-														</div>
-														<div class="invest__total-bottom bottom-total">
-															<div class="bottom-total__name">	
-																<div class="bottom-total__name-bal">ABC Total Balance</div>
-																<div class="bottom-total__name-num">8420 ABC</div>
-															</div>
-															<div class="bottom-total__wrap">
-																<div class="bottom-total__trad">
-																	<div class="bottom-total__trad-name">ABC Balance in trading</div>
-																	<div class="bottom-total__trad-num">4250 ABC</div>
-																</div>
-																<div class="bottom-total__frozen">
-																	<div class="bottom-total__frozen-name">Frozen ABC Balance</div>
-																	<div class="bottom-total__frozen-num">1670 ABC</div>
-																</div>
-																<div class="bottom-total__ava">
-																	<div class="bottom-total__ava-name">Available ABC Balance</div>
-																	<div class="bottom-total__ava-num">830 ABC</div>
-																</div>
-															</div>
-														</div>
-														<div class="invest__links-btn">
-															<a href="#callback" class="invest__link pl">Open new TID</a>
-															<a href="#callback" class="invest__link pl">Make A Deposit</a>
-															<a href="#callback" class="invest__link pl">Buy a Profit Card</a>
-														</div>
-													</div>
-													<div class="invest__col invest__col_d">
-														<div class="invest__diagrama">
-                                                            <div class="invest__diagrama-wrap diagrama">
-                                                                <div class="diagrama__x">
-                                                                    <div>300 USDT</div>
-                                                                    <div>200 USDT</div>
-                                                                    <div>100 USDT</div>
-                                                                    <div>0 USDT</div>
-                                                                </div>
-                                                                <div class="diagrama__block">
-                                                                    <div class="invest__diagrama-title">Profit Graphic</div>
-                                                                    <div class="diagrama__graphic-wrap">
-                                                                        <div class="diagrama__graphic">
-                                                                            <span>Profit</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="diagrama__y">
-                                                                        <div>19</div>
-                                                                        <div>19</div>
-                                                                        <div>20</div>
-                                                                        <div>21</div>
-                                                                        <div>22</div>
-                                                                        <div>23</div>
-                                                                        <div>24</div>
-                                                                        <div>25</div>
-                                                                    </div>
+                                            <div class="invest__col invest__col_d">
+                                                <div class="invest__diagrama">
+                                                    <div class="invest__diagrama-wrap diagrama">
+                                                        <div class="diagrama__x">
+                                                            <div>300 USDT</div>
+                                                            <div>200 USDT</div>
+                                                            <div>100 USDT</div>
+                                                            <div>0 USDT</div>
+                                                        </div>
+                                                        <div class="diagrama__block">
+                                                            <div class="invest__diagrama-title">Profit Graphic</div>
+                                                            <div class="diagrama__graphic-wrap">
+                                                                <div class="diagrama__graphic">
+                                                                    <span>Profit</span>
                                                                 </div>
                                                             </div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									  </div>
-									  <div class="invest__bottom">
-                                        <div class="invest__bottom-table table-invest">
-                                            <div class="invest__bottom-title">Investments details</div>
-                                            <div class="table-invest__row">
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__name">Date</div>
-                                                    <div class="table-item__date">25/07/2020</div>
-                                                    <div class="table-item__date">25/07/2020</div>
-                                                    <div class="table-item__date">25/07/2020</div>
-                                                    <div class="table-item__date">25/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">24/07/2020</div>
-                                                    <div class="table-item__date">23/07/2020</div>
-                                                    <div class="table-item__date">23/07/2020</div>
-                                                    <div class="table-item__date">23/07/2020</div>
-                                                    <div class="table-item__date">23/07/2020</div>
-                                                    <div class="table-item__date">23/07/2020</div>
-                                                    <div class="table-item__date">21/07/2020</div>
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">Time (UTC)</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:05:44</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:4</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:44</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:37</div>
-                                                    <div class="table-item__time-num">00:07:37</div>
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__name">Profit (USDT)</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.56 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+27.37 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+273.75 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.00 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__r">+4.56 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__r">+27.37 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__r">+273.75 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__r">+4.00 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__r">+4.00 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+273.75 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.00 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.56 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+27.37 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+273.75 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.00 USDT</div>
-                                                    <div class="table-item__time-num table-item__time-num__g">+4.00 USDT</div>
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">TID No.</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-                                                    <div class="table-item__time-num table-item__time-num__u">TID73543124</div>
-
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">TID Amount (ABC)</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">750 ABC</div>
-                                                    <div class="table-item__time-num">5000 ABC</div>
-                                                    <div class="table-item__time-num">110 ABC</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">750 ABC</div>
-                                                    <div class="table-item__time-num">2550 ABC</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">1250 ABC</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">550 ABC</div>
-                                                    <div class="table-item__time-num">110 ABC</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">1250 ABC</div>
-                                                    <div class="table-item__time-num">250 ABC</div>
-                                                    <div class="table-item__time-num">750 ABC</div>
-                                                </div>
-                                                <table class="table-invest__col table-item">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td class="table-item__time">Trading Interest Rate (TiR)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+0.73 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+2.19 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g">+1.46 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <tr>
-                                                        <td class="table-item__time-num table-item__time-num__g" style="padding-bottom: 14px;">+1.46 %</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">TID Open Date</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:05:44</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:4</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:44</div>
-                                                    <div class="table-item__time-num">00:09:12</div>
-                                                    <div class="table-item__time-num">00:07:37</div>
-                                                    <div class="table-item__time-num">00:07:37</div>
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">Deactivation in</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">15 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">15 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">10 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                    <div class="table-item__time-num">5 Days</div>
-                                                </div>
-                                                <div class="table-invest__col table-item">
-                                                    <div class="table-item__time">TID Option</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
-                                                    <div class="table-item__time-num">Option 1</div>
+                                                            <div class="diagrama__y">
+                                                                <div>19</div>
+                                                                <div>19</div>
+                                                                <div>20</div>
+                                                                <div>21</div>
+                                                                <div>22</div>
+                                                                <div>23</div>
+                                                                <div>24</div>
+                                                                <div>25</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div> 
-									  </div>
-                                  </div>
-                                  <div class="invest__pagin">
-                                      <div class="invest__pagin-counter">
-                                        Showing 1-16 of 4568
-                                      </div>
-                                      <div class="invest__pagin-control">
-                                          <a href="#" class="invest__pagin-control-left"></a>
-                                          <a href="#" class="invest__pagin-control-right"></a>
-                                      </div>
-                                  </div>
-								</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="invest__bottom">
+                                <div class="invest__bottom-table table-invest">
+                                    <div class="invest__bottom-title">Investments details</div>
+                                    <div class="table-invest__row">
+                                        <table class="table-invest__col table-item">
+                                            <tbody>
+                                            <tr>
+                                            <td class="table-item__name">Date</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__date">25/07/2020</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-invest__col table-item">
+                                            <tbody>
+                                            <tr>
+                                            <td class="table-item__name">Time (UTC)</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num">00:09:12</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-invest__col table-item">
+                                            <tbody>
+                                            <tr>
+                                            <td class="table-item__name">Profit (USDT)</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr></tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                            <td class="table-item__time-num table-item__time-num__g">+4.56 USDT</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num table-item__time-num__g" style="border-bottom-width: 2.25; padding-bottom: 14px;">+4.56 USDT</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-invest__col table-item">
+                                            <tbody>
+                                                <tr>
+                                                <td class="table-item__name">TID No.</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="table-item__time-num table-item__time-num__u">TID73543124</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-invest__col table-item">
+                                            <tbody>
+                                            <tr>
+                                                <td class="table-item__name">TID Amount (ABC)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-item__time-num">250 ABC</td>
+                                            </tr>
+                                            </tbody>
+                                            <table class="table-invest__col table-item">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="table-item__name">Trading Interest Rate (TiR)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+0.73 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+2.19 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td class="table-item__time-num table-item__time-num__g"
+                                                        style="padding-bottom: 14px;">+1.46 %
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-invest__col table-item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="table-item__name">TID Open Date</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-item__time-num">00:09:12</td>
+                                                    </tr>
+                                                </tbody>
 
-<!--other code-->
-
+                                            </table>
+                                            <table class="table-invest__col table-item">
+                                                <tbody>
+                                                    <tr><td class="table-item__time">Deactivation in</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                    <tr><td class="table-item__time-num">5 Days</td></tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-invest__col table-item">
+                                                <tr><td class="table-item__time">TID Option</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                                <tr><td class="table-item__time-num">Option 1</td></tr>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invest__pagin">
+                            <div class="invest__pagin-counter">
+                                Showing 1-16 of 4568
+                            </div>
+                            <div class="invest__pagin-control">
+                                <a href="#" class="invest__pagin-control-left"></a>
+                                <a href="#" class="invest__pagin-control-right"></a>
+                            </div>
                         </div>
                     </div>
-
+                    <!--other code-->
                 </div>
-            </section>
-    
+            </div>
     </div>
+    </section>
 
-    </div>
+</div>
+
+</div>
 
 <div class="popup popup-callback ms_1">
-	<div class="popup-table table">
-		<div class="cell">
-			<div class="popup-content">
-				<div class="pop__wrap">
-					<div class="pop__top">
-						<span></span>
-						<div class="pop__name">
-							<div class="pop__name-title">Select your TID Option</div>			
-							<span><img src="images/investmens/pop-logo.png" alt="" /></span>
-						</div>
-						<!-- <div class="pop__close">Close</div> -->
-					</div>
-					<div class="pop__body">
-						<div class="pop__row">
-							<div class="pop__col">
-								<div class="pop__item item-pop">
-									<div class="item-pop__name">Option 1</div>
-									<div class="item-pop__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce non hendrerit justo. Ut rutrum aliquam sapien.
-									</div>
-									<div class="item-pop__indicate indicate">
-										<div class="indicate__name">Indicate TID Period:</div>
-										<div class="indicate__scroll">
-											<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-												<input name="flevel" id="flying" type="range" min="1" max="30" value="1" step="1">
-												<output for="flying" name="level">20</output>
-												<span>Days</span>
-											</form>
-										</div>
-										<div class="indicate__descr">*Min.: 2 days / Max.: 30 days</div>
-									</div>
-									<div class="item-pop__enter enter-pop">
-										<div class="enter-pop__name">TID Amount:</div>
-										<div class="enter-pop__input">
-											<input style="text-align:right;" value="0" autocomplete="off" type="text" name="form[]" data-value="" />
-											<span>abc</span>
-										</div>
-										<div class="enter-pop__descr">*Min.: 50 ABC / Max.: 500 ABC</div>
-									</div>
-									<div class="item-pop__check">
-										<div class="check">
-											I confirm to open TID
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-										<div class="check">
-											I accept <a href="#">Terms & Conditions</a>
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-									</div>
-									<a href="#" class="item-pop__btn">Open new TID</a>
-								</div>
-							</div>
-							<div class="pop__col">
-								<div class="pop__item item-pop">
-									<div class="item-pop__name">Option 2</div>
-									<div class="item-pop__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce non hendrerit justo. Ut rutrum aliquam sapien.
-									</div>
-									<div class="item-pop__indicate indicate">
-										<div class="indicate__name">Indicate TID Period</div>
-										<div class="indicate__scroll">
-											<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-												<input autocomplete="off" name="flevel"  type="range" min="1" max="365" value="1" step="1">											
-												<output for="flying" name="level">365</output>
-												<span>Days</span>
-											</form>
-										</div>
-										<div class="indicate__descr">*Min.: 45 days / Max.: 365 days</div>
-									</div>
-									<div class="item-pop__enter enter-pop">
-										<div class="enter-pop__name">TID Amount:</div>
-										<div class="enter-pop__input">
-											<input style="text-align:right;" value="2000" autocomplete="off" type="text" name="form[]" data-value="" />
-											<span>abc</span>
-										</div>
-										<div class="enter-pop__descr">*Min.: 100 ABC / Max.: 10000 ABC</div>
-									</div>
-									<div class="item-pop__check">
-										<div class="check">
-											I confirm to open TID
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-										<div class="check">
-											I accept <a href="#">Terms & Conditions</a>
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-									</div>
-									<a href="#" class="item-pop__btn">Open new TID</a>
-								</div>
-							</div>
-							<div class="pop__col">
-								<div class="pop__item item-pop">
-									<div class="item-pop__name">Option 3</div>
-									<div class="item-pop__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce non hendrerit justo. Ut rutrum aliquam sapien.
-									</div>
-									<div class="item-pop__indicate indicate">
-										<div class="indicate__name">Indicate TID Period</div>
-										<div class="indicate__scroll">
-											<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-												<input name="flevel" type="range" min="1" max="730" value="1" step="1">
-												<output for="flying" name="level">730</output>
-												</form>
-										</div>
-										<div class="indicate__descr">*Min.: 180 days / Max.: 730 days</div>
-									</div>
-									<div class="item-pop__enter enter-pop">
-										<div class="enter-pop__name">TID Amount:</div>
-										<div class="enter-pop__input">
-											<input style="text-align:right;" value="0"autocomplete="off" type="text" name="form[]" data-value="" />
-											<span>abc</span>
-										</div>
-										<div class="enter-pop__descr">*Min.: 10000 ABC / Max.: 100000 ABC</div>
-									</div>
-									<div class="item-pop__check">
-										<div class="check">
-											I confirm to open TID
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-										<div class="check">
-											I accept <a href="#">Terms & Conditions</a>
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-									</div>
-									<a href="#" class="item-pop__btn">Open new TID</a>
-								</div>
-							</div>
-							<div class="pop__col">
-								<div class="pop__item item-pop">
-									<div class="item-pop__name">Option 4</div>
-									<div class="item-pop__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce non hendrerit justo. Ut rutrum aliquam sapien.
-									</div>
-									<div class="item-pop__indicate indicate">
-										<div class="indicate__name">Indicate TID Period</div>
-										<div class="indicate__scroll">
-											<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-												<input name="flevel" type="range" min="1" max="90" value="1" step="1">
-												<output for="flying" name="level">90</output>
-											</form>
-										</div>
-										<div class="indicate__descr">*Min.: 45 days / Max.: 90 days</div>
-									</div>
-									<div class="item-pop__enter enter-pop">
-										<div class="enter-pop__name">TID Amount:</div>
-										<div class="enter-pop__input">
-											<input style="text-align:right;" value="0" autocomplete="off" type="text" name="form[]" data-value="" />
-											<span>abs</span>
-										</div>
-										<div class="enter-pop__descr">*Min.: 50000 ABC / Max.: 100000 ABC</div>
-									</div>
-									<div class="item-pop__check">
-										<div class="check">
-											I confirm to open TID
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-										<div class="check">
-											I accept <a href="#">Terms & Conditions</a>
-											<input type="checkbox" value="1" name="form[]">
-										</div>
-									</div>
-									<a href="#" class="item-pop__btn">Open new TID</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="popup-close"><span>Close</span></div>
-				<!-- <div class="popup__title"></div>
-				<div class="popup__txt"></div> -->
-				<!-- <form action="#" class="popup-form form">
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
-					</div>
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
-					</div>
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
-					</div>
-					<div class="form-button">
-						<button type="submit" class="form__btn btn fw"></button>
-					</div>
-				</form> -->
-			</div>
-		</div>
-	</div>
+    <div class="popup-table table">
+        <div class="cell">
+            <div class="popup-content">
+                <div class="pop__wrap">
+                    <div class="pop__top">
+                        <span></span>
+                        <div class="pop__name">
+                            <div class="pop__name-title">Select your TID Option</div>
+                            <span><img src="images/investmens/pop-logo.png" alt=""/></span>
+                        </div>
+                        <!-- <div class="pop__close">Close</div> -->
+                    </div>
+                    <div class="pop__body">
+                        <div class="pop__row">
+                            <div class="pop__col">
+                                <div class="pop__item item-pop">
+                                    <div class="item-pop__name">Option 1</div>
+                                    <div class="item-pop__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare
+                                        augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante
+                                        sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce
+                                        non hendrerit justo. Ut rutrum aliquam sapien.
+                                    </div>
+                                    <div class="item-pop__indicate indicate">
+                                        <div class="indicate__name">Indicate TID Period:</div>
+                                        <div class="indicate__scroll">
+                                            <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                                                <input name="flevel" id="flying" type="range" min="1" max="30" value="1"
+                                                       step="1">
+                                                <output for="flying" name="level">20</output>
+                                                <span>Days</span>
+                                            </form>
+                                        </div>
+                                        <div class="indicate__descr">*Min.: 2 days / Max.: 30 days</div>
+                                    </div>
+                                    <div class="item-pop__enter enter-pop">
+                                        <div class="enter-pop__name">TID Amount:</div>
+                                        <div class="enter-pop__input">
+                                            <input style="text-align:right;" value="0" autocomplete="off" type="text"
+                                                   name="form[]" data-value=""/>
+                                            <span>abc</span>
+                                        </div>
+                                        <div class="enter-pop__descr">*Min.: 50 ABC / Max.: 500 ABC</div>
+                                    </div>
+                                    <div class="item-pop__check">
+                                        <div class="check">
+                                            I confirm to open TID
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                        <div class="check">
+                                            I accept <a href="#">Terms & Conditions</a>
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="item-pop__btn">Open new TID</a>
+                                </div>
+                            </div>
+                            <div class="pop__col">
+                                <div class="pop__item item-pop">
+                                    <div class="item-pop__name">Option 2</div>
+                                    <div class="item-pop__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare
+                                        augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante
+                                        sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce
+                                        non hendrerit justo. Ut rutrum aliquam sapien.
+                                    </div>
+                                    <div class="item-pop__indicate indicate">
+                                        <div class="indicate__name">Indicate TID Period</div>
+                                        <div class="indicate__scroll">
+                                            <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                                                <input autocomplete="off" name="flevel" type="range" min="1" max="365"
+                                                       value="1" step="1">
+                                                <output for="flying" name="level">365</output>
+                                                <span>Days</span>
+                                            </form>
+                                        </div>
+                                        <div class="indicate__descr">*Min.: 45 days / Max.: 365 days</div>
+                                    </div>
+                                    <div class="item-pop__enter enter-pop">
+                                        <div class="enter-pop__name">TID Amount:</div>
+                                        <div class="enter-pop__input">
+                                            <input style="text-align:right;" value="2000" autocomplete="off" type="text"
+                                                   name="form[]" data-value=""/>
+                                            <span>abc</span>
+                                        </div>
+                                        <div class="enter-pop__descr">*Min.: 100 ABC / Max.: 10000 ABC</div>
+                                    </div>
+                                    <div class="item-pop__check">
+                                        <div class="check">
+                                            I confirm to open TID
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                        <div class="check">
+                                            I accept <a href="#">Terms & Conditions</a>
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="item-pop__btn">Open new TID</a>
+                                </div>
+                            </div>
+                            <div class="pop__col">
+                                <div class="pop__item item-pop">
+                                    <div class="item-pop__name">Option 3</div>
+                                    <div class="item-pop__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare
+                                        augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante
+                                        sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce
+                                        non hendrerit justo. Ut rutrum aliquam sapien.
+                                    </div>
+                                    <div class="item-pop__indicate indicate">
+                                        <div class="indicate__name">Indicate TID Period</div>
+                                        <div class="indicate__scroll">
+                                            <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                                                <input name="flevel" type="range" min="1" max="730" value="1" step="1">
+                                                <output for="flying" name="level">730</output>
+                                            </form>
+                                        </div>
+                                        <div class="indicate__descr">*Min.: 180 days / Max.: 730 days</div>
+                                    </div>
+                                    <div class="item-pop__enter enter-pop">
+                                        <div class="enter-pop__name">TID Amount:</div>
+                                        <div class="enter-pop__input">
+                                            <input style="text-align:right;" value="0" autocomplete="off" type="text"
+                                                   name="form[]" data-value=""/>
+                                            <span>abc</span>
+                                        </div>
+                                        <div class="enter-pop__descr">*Min.: 10000 ABC / Max.: 100000 ABC</div>
+                                    </div>
+                                    <div class="item-pop__check">
+                                        <div class="check">
+                                            I confirm to open TID
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                        <div class="check">
+                                            I accept <a href="#">Terms & Conditions</a>
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="item-pop__btn">Open new TID</a>
+                                </div>
+                            </div>
+                            <div class="pop__col">
+                                <div class="pop__item item-pop">
+                                    <div class="item-pop__name">Option 4</div>
+                                    <div class="item-pop__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ornare
+                                        augue sed tincidunt. Morbi aliquet fermentum dolor vitae vehicula. In non ante
+                                        sed neque vestibulum facilisis at quis nunc. Phasellus vel gravida nisl. Fusce
+                                        non hendrerit justo. Ut rutrum aliquam sapien.
+                                    </div>
+                                    <div class="item-pop__indicate indicate">
+                                        <div class="indicate__name">Indicate TID Period</div>
+                                        <div class="indicate__scroll">
+                                            <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                                                <input name="flevel" type="range" min="1" max="90" value="1" step="1">
+                                                <output for="flying" name="level">90</output>
+                                            </form>
+                                        </div>
+                                        <div class="indicate__descr">*Min.: 45 days / Max.: 90 days</div>
+                                    </div>
+                                    <div class="item-pop__enter enter-pop">
+                                        <div class="enter-pop__name">TID Amount:</div>
+                                        <div class="enter-pop__input">
+                                            <input style="text-align:right;" value="0" autocomplete="off" type="text"
+                                                   name="form[]" data-value=""/>
+                                            <span>abs</span>
+                                        </div>
+                                        <div class="enter-pop__descr">*Min.: 50000 ABC / Max.: 100000 ABC</div>
+                                    </div>
+                                    <div class="item-pop__check">
+                                        <div class="check">
+                                            I confirm to open TID
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                        <div class="check">
+                                            I accept <a href="#">Terms & Conditions</a>
+                                            <input type="checkbox" value="1" name="form[]">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="item-pop__btn">Open new TID</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><span>Close</span></div>
+                <!-- <div class="popup__title"></div>
+                <div class="popup__txt"></div> -->
+                <!-- <form action="#" class="popup-form form">
+                    <div class="form-input">
+                        <input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+                    </div>
+                    <div class="form-input">
+                        <input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
+                    </div>
+                    <div class="form-input">
+                        <input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="form__btn btn fw"></button>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="popup popup-message ms_1">
-	<div class="popup-table table">
-		<div class="cell">
-			<div class="popup-content">
-				<div class="popup-close"></div>
-				<div class="popup__title"></div>
-				<div class="popup__txt">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae nobis neque nam quidem. Dolorum repellendus, voluptatibus animi debitis! Similique dolorum facilis iusto atque laborum minima omnis ipsam rerum ab!
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="popup-table table">
+        <div class="cell">
+            <div class="popup-content">
+                <div class="popup-close"></div>
+                <div class="popup__title"></div>
+                <div class="popup__txt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae nobis neque nam quidem.
+                    Dolorum repellendus, voluptatibus animi debitis! Similique dolorum facilis iusto atque laborum
+                    minima omnis ipsam rerum ab!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <div class="popup popup-video">
-	<div class="popup-table table">
-		<div class="cell">
-			<div class="popup-close"></div>
-			<div class="popup-video__value"></div>
-		</div>
-	</div>
+    <div class="popup-table table">
+        <div class="cell">
+            <div class="popup-close"></div>
+            <div class="popup-video__value"></div>
+        </div>
+    </div>
 </div>
 
 
-
-
-
-
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>    
-	 <script src="js/libs.min.js"></script>
-     <script src="js/main.min.js"></script>
-	 <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

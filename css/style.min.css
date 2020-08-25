@@ -1697,8 +1697,10 @@ a.notfound__inner-home {
     max-width: 170px;
     width: 100%;
     overflow: hidden;
-    display: block
+    display: block;
 }
+
+
 
 .profile .profile_box-row input, .profile .box-row input {
     max-width: 270px;
@@ -1710,6 +1712,10 @@ a.notfound__inner-home {
     color: #5d858d;
     background-color: transparent;
     outline: none
+}
+
+.profile .profile_box-row .username {
+    margin-right:17px;
 }
 
 .profile .profile_box-row input::-webkit-input-placeholder, .profile .box-row input::-webkit-input-placeholder {
@@ -1804,8 +1810,8 @@ a.notfound__inner-home {
     -o-transition: all 0.4s;
     transition: all 0.4s;
     background-color: transparent;
-    max-width: 80px;
-    outline: none
+    max-width: 100px;
+    outline: none;
 }
 
 .profile .profile_box-birth p{

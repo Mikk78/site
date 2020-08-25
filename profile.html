@@ -179,8 +179,6 @@
                                 </ul>
                             </div>
                         </aside>
-
-
                         <div class="body body__profile">
                             <div class="top">
                                 <div class="top__title">
@@ -238,7 +236,7 @@
                                                     Account data
                                                 </div>
                                                 <div class="profile_box-account">
-                                                    <div class="profile_box-row"><span>Username</span> <input
+                                                    <div class="profile_box-row"><span class="username">Username</span> <input
                                                             type="text">
                                                     </div>
                                                     <div class="profile_box-row"><span>E-Mail</span> <input
@@ -433,14 +431,16 @@
                                                     </div>
                                                     <div class="box-row check-row">
                                                         <span>Hide from public</span>
-                                                        <div class="hider">
-                                                            <p>Off</p>
+                                                        <form action="">
+                                                            <div class="hider">
+                                                                <p>Off</p>
                                                                 <label class="switch">
                                                                     <input type="checkbox">
                                                                     <span class="slider round"></span>
                                                                 </label>
-                                                            <p>On</p>
-                                                        </div>
+                                                                <p>On</p>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -450,7 +450,7 @@
                                                 </div>
                                                 <div class="profile_box-wallet">
                                                     <div class="profile_box-row">
-                                                        <span>Your Promo-code</span>
+                                                        <span style="margin-right:20px">Your Promo-code</span>
                                                         <div class="wallet-icon">
                                                             <img src="images/profile/hang.png" alt="hang">
                                                         </div>
