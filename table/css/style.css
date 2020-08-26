@@ -1015,6 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px; }
   @media (max-width: 1080px) {
     .invest__row {
+      max-width: 80%;
       display: block; } }
 
 .invest__col {
@@ -1538,7 +1539,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff; }
 
 .invest__bottom {
-  max-width: 1470px;
+  max-width: 100%;
   border: 1px solid #2d2c3c;
   margin: 50px 0px 0px 0px; }
 
@@ -1555,6 +1556,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 20px 20px 20px; }
   @media (max-width: 479.98px) {
     .invest__bottom-table {
+      max-width: 80%
       margin: 20px 5px 20px 5px; } }
 
 .table-invest__row {
@@ -1596,7 +1598,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 14px;
 }
 
-
 .table-item {
   text-align: center; }
   .table-item__name {
@@ -1608,6 +1609,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ecfabd;
     padding: 15px 25px;
     border-bottom: 1px solid #2d2c3c;
+    border-right: 1px solid #2d2c3c;
     white-space: nowrap; }
     @media (max-width: 1600px) {
       .table-item__name {
@@ -1621,9 +1623,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.05em;
     color: #56baca;
     padding: 15px 25px;
-    border-bottom: 1px solid #2d2c3c; }
-    @media (max-width: 1600px) {
+    border-bottom: 1px solid #2d2c3c;
+    border-right: 1px solid #2d2c3c; }
+    @media (max-width: 600px) {
       .table-item__date {
+
         padding: 15px 10px; } }
   .table-item__time {
     font-size: 12px;
@@ -1634,6 +1638,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ecfabd;
     padding: 15px 27px;
     border-bottom: 1px solid #2d2c3c;
+    border-right: 1px solid #2d2c3c;
     white-space: nowrap; }
     @media (max-width: 1600px) {
       .table-item__time {
@@ -1647,6 +1652,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #56baca;
     padding: 15px 25px;
     border-bottom: 1px solid #2d2c3c;
+    border-right: 1px solid #2d2c3c;
     white-space: nowrap; }
     .table-item__time-num__g {
       color: #56ca6c; }
@@ -1654,6 +1660,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #ca5656; }
     .table-item__time-num__u {
       text-decoration: underline; }
+
 
 .form-row {
   display: -webkit-box;
