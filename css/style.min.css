@@ -1687,7 +1687,8 @@ a.notfound__inner-home {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+
 }
 
 .profile .profile_box-row span, .profile .box-row span {
@@ -1715,7 +1716,7 @@ a.notfound__inner-home {
 }
 
 .profile .profile_box-row .username {
-    margin-right:17px;
+    margin-left:17px;
 }
 
 .profile .profile_box-row input::-webkit-input-placeholder, .profile .box-row input::-webkit-input-placeholder {
