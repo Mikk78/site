@@ -1816,7 +1816,9 @@ a.notfound__inner-home {
 }
 
 .profile .profile_box-birth p{
-    padding: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:7px;
     font-size: 14px;
     text-transform: uppercase;
     color: #5d858d;
@@ -1913,6 +1915,7 @@ a.notfound__inner-home {
 }
 
 .profile .check-male {
+    margin-left: 10px;
     padding: 10px;
     font-size: 14px;
     color: #5d858d
